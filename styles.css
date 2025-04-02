@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;      
+}
+/* Nav bar design */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(136, 136, 136, 0.400);
+    height: 50px;
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+.logo {
+    cursor: pointer;
+    color: cornflowerblue;
+}
+h2 {
+    color: cornflowerblue;
+}
+a:hover {
+    background-color: rgba(173, 173, 173, 0.446);
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+li {
+    list-style: none;
+    
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px
+}
+/* End */
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+}
+hr {
+    margin: auto;
+}
+.input-divs {
+    width: 350px;
+    height: 320px;
+    align-items: center;
+    border: 1px solid rgb(213, 213, 214);
+    border-radius: 10px;
+    background-color: rgba(213, 213, 214, 0.134);
+}
+
+input, button, .sign {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    background-color:cornflowerblue;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+input {
+    width: 230px;
+    height: 35px;
+}
+.text {
+    cursor: pointer;
+}
+::placeholder {
+    text-align: center;
+}
+input {
+    text-align: center;
+}
+h2 {
+    color: cornflowerblue;
+}
+.sign {
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    background-color:cornflowerblue;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.sign:hover {
+    transform : scale(1.2);
+    background-color:cornflowerblue;
+
+}
+.submit {
+    transition: 0.5s;
+}
+.submit:hover {
+    transform: scale(1.2);
+}
+input {
+    transition: all;
+}
+input:active {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        display: block;
+        margin-top: 60px;
+        /* height: 100vh; */
+        width: 70%;
+        margin: auto;
+    }
+    .text-divs {
+        margin-bottom: 30px;
+        
+    }
+    nav ul li a {
+        display: none;
+    }
+    nav ul .icon {
+        display: block;
+    }
+}
+nav ul .icon {
+    display: none;
+}
