@@ -10,12 +10,13 @@ body {
 /* Nav bar design */
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0 0 15px rgba(136, 136, 136, 0.400);
     height: 50px;
     
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -35,23 +36,26 @@ a:hover {
 }
 li {
     list-style: none;
-    
+    display: none;
+
 }
 ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px
+    gap: 40px;
+
 }
 /* End */
 
 .content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 90%;
     height: 100vh;
-    margin: auto;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 hr {
     margin: auto;
@@ -128,25 +132,21 @@ input:active {
     transform: scale(1.2);
 }
 
-@media screen and (max-width: 500px) {
-    .content {
-        display: block;
-        margin-top: 60px;
-        /* height: 100vh; */
-        width: 70%;
-        margin: auto;
-    }
-    .text-divs {
-        margin-bottom: 30px;
-        
-    }
-    nav ul li a {
+@media screen and (min-width: 640px) {
+    nav ul .icon {
         display: none;
     }
-    nav ul .icon {
-        display: block;
+    nav ul li {
+        display: flex;
     }
 }
-nav ul .icon {
-    display: none;
+
+
+.div-text {
+    width: 90%;
+    margin-inline: auto;
+    max-width: 1200px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
